@@ -1,21 +1,14 @@
-{
-  "builds": [
-    {
-      "src": "index.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.py"
-    }
-  ],
-  "functions": {
-    "index.py": {
-      "runtime": "python3.10"
-    }
-  },
-  "deploymentType": "python",
-  "wsgi": "index:app"
-}
+"version": 2,
+     "builds": [
+         {
+             "src": "./index.py",
+             "use": "@vercel/python"
+         }
+     ],
+     "routes": [
+         {
+             "src": "/(.*)",
+             "dest": "/"
+         }
+     ]
+ }
